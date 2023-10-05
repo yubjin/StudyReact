@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+//import Clock from './01/Clock';
+//import Lotto from './02/Lotto';
+//import Frcst from './05/Frcst';
+//import Taccident from './06/Taccident';
+//import MyRef from './07/MyRef';
+import Box2 from './04/Box2'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    //<Clock/>
+    //<Lotto/>
+    //<Frcst/>
+    //<Taccident/>
+    //<MyRef/>
+    <Box2/>
+    
   );
 }
 

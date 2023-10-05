@@ -1,0 +1,38 @@
+
+.lottobox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lottonum1, .lottonum2, .lottonum3, .lottonum4, .lottonum5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 50%;
+  }
+  
+  .lottonum1{
+    background-color: rgb(48, 146, 92);
+    color: white;
+  }
+  .lottonum2{
+    background-color: rgb(194, 58, 58);
+    color: white;
+  }
+  .lottonum3{
+    background-color: rgb(45, 107, 201);
+    color: white;
+  }
+  .lottonum4{
+    background-color: rgb(214, 185, 55);
+    color: white;
+  }
+  .lottonum5{
+    background-color: rgb(138, 38, 196);
+    color: white;
+  }
