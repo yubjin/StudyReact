@@ -24,9 +24,13 @@ const Box2 = () =>{
         setCdt(y+m+d);
     },[]);
     
-    useEffect(()=>{
-        console.log()
-    },[])
+    useEffect(() => {
+        let url = 'https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20230918';
+        fetch(url)
+            .then(resp => resp.json())
+            .then(data => setBoxlist(data.boxOfficeResult.dailyBoxOfficeList))
+            .catch(err => console.log(err));
+    }, []);
 
     const handleChange =()=>{
         let temp = dt.current.value.replaceAll('-','');

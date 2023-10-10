@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# StudyJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>React를 공부하는 과정을 저장해 둔 곳입니다. 공부하는 과정을 저장해 둔 곳이기 때문에 활용에 주의를 요합니다.
 
-## Available Scripts
+## 개발 환경
 
-In the project directory, you can run:
+- Chrome
 
-### `npm start`
+- VSCode
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React App
+    - [Create React App](https://github.com/facebook/create-react-app).
+```
+npx create-react-app my-app
+cd my-app
+npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- tailwindcss
+```
+npm install -D tailwindcss
+npx tailwindcss init
+```
 
-### `npm test`
+## 수행 내용
+- 09.19 <컴포넌트 생성, props, useState, useEffect>
+- 09.21 <Clock 및 Lotto 예제 >
+    - <미세먼지 예제>
+- 09.26 <사고 유형별 교통사고 통계 예제>  
+- 10.05 <일일 박스오피스 예제>
+    - <useRef 예제>
+- 10.10 <한국관광공사 관광사진 정보 예제>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 폴더 별 내용 정리
+- 01: 시계 만들기 예제
+- 02: 로또 번호 생성기 예제
+- 04: 일일 박스오피스 예제
+- 05: 미세먼지 예제
+- 06: 사고 유형별 교통사고 통계 예제
+- 07: useRef 예제
+- 08: 한국관광공사 관광사진정보 예제
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Ref.
+- .gitignore
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [picocss](https://picocss.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [공공데이터포털](https://www.data.go.kr/index.do)
 
-### `npm run eject`
+- [KOFIC 영화관입장권통합전산망](https://www.kobis.or.kr/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [tailwindcss](https://tailwindcss.com/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
