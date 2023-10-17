@@ -1,12 +1,13 @@
 import { FcCamera } from "react-icons/fc";
 import Buttonblue from "../comm/Buttonblue";
-import GalleryItem from "./GalleryItem";
+import GalleryCard from "./GalleryCard";
 import { useEffect, useRef, useState } from "react";
 
 const Gallery = () => {
     //키워드 상태 변수
     const [kw, Setkw] = useState();
     const [Item, SetItem] = useState();
+    const [tags, setTags] = useState();
 
     //input box
     const txt1 = useRef();
@@ -19,6 +20,10 @@ const Gallery = () => {
 
     const handleCancel = (e) =>{
         e.preventDefault();
+        txt1.current.value = '';
+        txt1.current.focus();
+        SetItem([]);
+        console.log("Cancel")
     }
 
     const getData = (kw) =>{
@@ -51,8 +56,22 @@ const Gallery = () => {
     },[kw])
 
     useEffect(()=>{
-        console.log("item", Item);
-    },[Item])
+        console.log("item", Item);if (Item === undefined) return ;
+ 
+        setTags(
+            Item.map((i) =>
+                <GalleryCard key={i.galContentId}
+                    imgsrc={i.galWebImageUrl.replace('http:', 'https:')}
+                    title={i.galTitle}
+                    content={i.galPhotographyLocation}
+                    sptag={i.galSearchKeyword.split(',')}
+                    refv={txt1}
+                />
+
+            )
+        );
+
+    }, [Item]);
 
     return (
         <main className="container">
@@ -77,8 +96,8 @@ const Gallery = () => {
                     </div>
                 </form>
             </article>
-            <section>
-                {Item && <GalleryItem Item ={Item}/>}
+            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-38">
+                {Item && tags}
             </section>
         </main>
     )

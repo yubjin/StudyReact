@@ -1,9 +1,14 @@
-const GalleryCard = ({imgsrc, title, content, sptag}) => {
-    const sptags = sptag.map((item,idx) => 
-        <span key={`sp$idx`} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            {item}
-        </span>
+const GalleryCard = ({imgsrc, title, content, sptag,refv}) => {
+    const sptags = sptag.map((item, idx) => 
+    <span onClick={() => handleClick(item)} key={`sp${idx}`} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+        {item}
+    </span>
     );
+    console.log(imgsrc)
+    const handleClick = (item) => {
+        console.log(item)
+        refv.current.value = item;
+    }
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
         <img className="w-full" src={imgsrc} alt={title}/>

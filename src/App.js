@@ -6,6 +6,7 @@ import './App.css';
 //import MyRef from './07/MyRef';
 //import Box2 from './04/Box2'
 import Gallery from './08/Gallery';
+//import Busan from './09/Busan';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
     //<MyRef/>
     //<Box2/>
     <Gallery/>
+    //<Busan/>
     
   );
 }
