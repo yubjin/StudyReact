@@ -30,6 +30,7 @@ npx tailwindcss init
 - 10.05 <일일 박스오피스 예제>
     - <useRef 예제>
 - 10.10 <한국관광공사 관광사진 정보 예제>
+- 10.13 <[vercel에 배포하기](https://study-react-beta-three.vercel.app/)>
 - 10.17 <부산광역시 부산축제정보 서비스 예제>
 
 ## 폴더 별 내용 정리
