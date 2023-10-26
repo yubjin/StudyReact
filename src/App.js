@@ -5,8 +5,10 @@ import './App.css';
 //import Taccident from './06/Taccident';
 //import MyRef from './07/MyRef';
 //import Box2 from './04/Box2'
-import Gallery from './08/Gallery';
+//import Gallery from './08/Gallery';
 //import Busan from './09/Busan';
+//import RouteMain from './10/RouteMain';
+import Fcst from './11/Fcst';
 
 function App() {
   return (
@@ -16,9 +18,11 @@ function App() {
     //<Taccident/>
     //<MyRef/>
     //<Box2/>
-    <Gallery/>
+    //<Gallery/>
     //<Busan/>
-    
+    //<RouteMain/>
+    <Fcst/>
+
   );
 }
 
